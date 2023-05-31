@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://realskyquest.github.io/realskyquest.github.io/sitemap.xml

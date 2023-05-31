@@ -1,0 +1,42 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "skyquest",
+    "description": "",
+    "home_page_url": "https://realskyquest.github.io/realskyquest.github.io",
+    "feed_url": "https://realskyquest.github.io/realskyquest.github.io/feed.json",
+    "user_comment": "",
+    "icon": "https://realskyquest.github.io/realskyquest.github.io/media/website/image-2.png",
+    "author": {
+        "name": "realskyquest"
+    },
+    "items": [
+        {
+            "id": "https://realskyquest.github.io/realskyquest.github.io/privacy-policy.html",
+            "url": "https://realskyquest.github.io/realskyquest.github.io/privacy-policy.html",
+            "title": "Privacy Policy",
+            "summary": "E E E E E E E E E E E E E E - Human",
+            "content_html": "\n    <figure class=\"blockquote\">\n      <blockquote>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br></blockquote>\n      <figcaption>- Human</figcaption>\n    </figure>",
+            "author": {
+                "name": "realskyquest"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-05-31T11:21:13+05:00",
+            "date_modified": "2023-05-31T11:21:13+05:00"
+        },
+        {
+            "id": "https://realskyquest.github.io/realskyquest.github.io/home-2.html",
+            "url": "https://realskyquest.github.io/realskyquest.github.io/home-2.html",
+            "title": "Home",
+            "summary": "Welcome This website is on testing phase test test test test test test test test test",
+            "content_html": "\n    <h1 id=\"welcome\" class=\"align-center\">\n      Welcome\n    </h1>\n<hr class=\"separator separator--long-line\" />\n\n  <p class=\"align-center\">\n    This website is on testing phase<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>\n  </p>\n\n  <p>\n    \n  </p>",
+            "author": {
+                "name": "realskyquest"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-05-31T11:19:34+05:00",
+            "date_modified": "2023-05-31T11:19:34+05:00"
+        }
+    ]
+}
