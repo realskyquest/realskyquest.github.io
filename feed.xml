@@ -3,7 +3,7 @@
     <title>skyquest</title>
     <link href="https://realskyquest.github.io/feed.xml" rel="self" />
     <link href="https://realskyquest.github.io" />
-    <updated>2023-05-31T18:14:49+05:00</updated>
+    <updated>2023-05-31T18:17:15+05:00</updated>
     <author>
         <name>realskyquest</name>
     </author>
@@ -204,10 +204,10 @@
         <link href="https://realskyquest.github.io/home.html"/>
         <id>https://realskyquest.github.io/home.html</id>
 
-        <updated>2023-05-31T18:04:38+05:00</updated>
+        <updated>2023-05-31T18:17:15+05:00</updated>
             <summary>
                 <![CDATA[
-                    Welcome This website is on testing phase test test test test test test test test test
+                    Welcome This website is on testing phase test test test test test test test test test I am gonna win the gc - SkyQuest
                 ]]>
             </summary>
         <content type="html">
@@ -219,12 +219,13 @@
 <hr class="separator separator--long-line" />
 
   <p class="align-center">
-    This website is on testing phase<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>
+    This website is on testing phase<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test
   </p>
 
-  <p>
-    
-  </p>
+    <figure class="blockquote">
+      <blockquote>I am gonna win the gc</blockquote>
+      <figcaption>- SkyQuest</figcaption>
+    </figure>
             ]]>
         </content>
     </entry>
