@@ -22,11 +22,11 @@
             "tags": [
             ],
             "date_published": "2023-05-31T11:21:13+05:00",
-            "date_modified": "2023-05-31T11:21:13+05:00"
+            "date_modified": "2023-05-31T18:06:11+05:00"
         },
         {
-            "id": "https://realskyquest.github.io/home-2.html",
-            "url": "https://realskyquest.github.io/home-2.html",
+            "id": "https://realskyquest.github.io/home.html",
+            "url": "https://realskyquest.github.io/home.html",
             "title": "Home",
             "summary": "Welcome This website is on testing phase test test test test test test test test test",
             "content_html": "\n    <h1 id=\"welcome\" class=\"align-center\">\n      Welcome\n    </h1>\n<hr class=\"separator separator--long-line\" />\n\n  <p class=\"align-center\">\n    This website is on testing phase<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>\n  </p>\n\n  <p>\n    \n  </p>",
@@ -36,7 +36,7 @@
             "tags": [
             ],
             "date_published": "2023-05-31T11:19:34+05:00",
-            "date_modified": "2023-05-31T11:19:34+05:00"
+            "date_modified": "2023-05-31T18:04:38+05:00"
         }
     ]
 }
