@@ -1,12 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>TEST</title>
+    <title>skyquest</title>
     <link href="https://realskyquest.github.io/feed.xml" rel="self" />
     <link href="https://realskyquest.github.io" />
-    <updated>1970-01-01T05:00:00+05:00</updated>
+    <updated>2023-05-31T11:21:13+05:00</updated>
     <author>
-        <name>TESTER</name>
+        <name>realskyquest</name>
     </author>
     <id>https://realskyquest.github.io</id>
 
+    <entry>
+        <title>Privacy Policy</title>
+        <author>
+            <name>realskyquest</name>
+        </author>
+        <link href="https://realskyquest.github.io/privacy-policy.html"/>
+        <id>https://realskyquest.github.io/privacy-policy.html</id>
+
+        <updated>2023-05-31T11:21:13+05:00</updated>
+            <summary>
+                <![CDATA[
+                    E E E E E E E E E E E E E E - Human
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <figure class="blockquote">
+      <blockquote>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br></blockquote>
+      <figcaption>- Human</figcaption>
+    </figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Home</title>
+        <author>
+            <name>realskyquest</name>
+        </author>
+        <link href="https://realskyquest.github.io/home-2.html"/>
+        <id>https://realskyquest.github.io/home-2.html</id>
+
+        <updated>2023-05-31T11:19:34+05:00</updated>
+            <summary>
+                <![CDATA[
+                    Welcome This website is on testing phase test test test test test test test test test
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h1 id="welcome" class="align-center">
+      Welcome
+    </h1>
+<hr class="separator separator--long-line" />
+
+  <p class="align-center">
+    This website is on testing phase<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>
+  </p>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
 </feed>
