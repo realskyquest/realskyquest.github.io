@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Weather Application - skyquest</title><meta name="description" content="Weather Application: enter your location to see current data from openweathermap.org. https://github.com/realskyquest/weather-application Humidity: N/A Wind Speed: N/A Condition: N/A"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://realskyquest.github.io/weather-application.html"><link rel="alternate" type="application/atom+xml" href="https://realskyquest.github.io/feed.xml"><link rel="alternate" type="application/json" href="https://realskyquest.github.io/feed.json"><meta property="og:title" content="Weather Application"><meta property="og:image" content="https://realskyquest.github.io/media/website/image-2.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta property="og:site_name" content="skyquest"><meta property="og:description" content="Weather Application: enter your location to see current data from openweathermap.org. https://github.com/realskyquest/weather-application Humidity: N/A Wind Speed: N/A Condition: N/A"><meta property="og:url" content="https://realskyquest.github.io/weather-application.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://realskyquest.github.io/media/website/image.ico" type="image/x-icon"><link rel="preload" href="https://realskyquest.github.io/assets/dynamic/fonts/publicsans/publicsans.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://realskyquest.github.io/assets/dynamic/fonts/oswald/oswald.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://realskyquest.github.io/assets/css/style.css?v=f5ac4cda3e62196110a860d0ed41d3a8"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://realskyquest.github.io/weather-application.html"},"headline":"Weather Application","datePublished":"2023-06-01T14:47","dateModified":"2023-06-01T15:01","image":{"@type":"ImageObject","url":"https://realskyquest.github.io/media/website/image-2.png","height":1200,"width":1200},"description":"Weather Application: enter your location to see current data from openweathermap.org. https://github.com/realskyquest/weather-application Humidity: N/A Wind Speed: N/A Condition: N/A","author":{"@type":"Person","name":"realskyquest","url":"https://realskyquest.github.io/authors/realskyquest/"},"publisher":{"@type":"Organization","name":"realskyquest","logo":{"@type":"ImageObject","url":"https://realskyquest.github.io/media/website/image-2.png","height":1200,"width":1200}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body><div class="site-container"><header class="top" id="js-header"><a class="logo" href="https://realskyquest.github.io/"><img src="https://realskyquest.github.io/media/website/image-2.png" alt="skyquest" width="1200" height="1200"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://realskyquest.github.io/" target="_self">Home</a></li><li><a href="https://realskyquest.github.io/privacy-policy.html" target="_self">Privacy</a></li><li class="active-parent has-submenu"><span class="is-separator" aria-haspopup="true">Projects</span><ul class="navbar__submenu level-2" aria-hidden="true"><li class="active"><a href="https://realskyquest.github.io/weather-application.html" target="_self">Weather Application</a></li></ul></li></ul></nav></header><main><article class="post"><div class="hero"><header class="hero__content"><div class="wrapper"><h1>Weather Application</h1></div></header></div><div class="wrapper post__entry"><p class="align-center">Weather Application: enter your location to see current data from openweathermap.org.<br><br></p><p class="msg msg--info align-center">https://github.com/realskyquest/weather-application</p><hr class="separator separator--long-line"><div><style>@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+        
+        .weather-container {
+  			display: flex;
+  			flex-direction: column;
+  			align-items: center;
+  			justify-content: center;
+  			height: 100vh;
+		}
+
+		.weather-box {
+  			display: flex;
+  			flex-direction: column;
+  			align-items: center;
+  			justify-content: center;
+  			background-color: #A52A2A;
+  			border-radius: 10px;
+  			padding: 20px;
+		}
+        
+        #temperature {
+        	font-family: Oswald, sans-serif;
+  			font-size: 50px;
+ 			margin: 0;
+  		    color: white;
+		}
+        
+		#humidity {
+ 	        color: white;
+        	font-size: 20px;
+            margin: 0;
+        }
+        
+        #windspeed {
+        	font-size: 20px;
+            margin: 0;
+            color: white;
+        }
+        
+		#condition {
+ 	        color: white;
+  			font-size: 20px;
+  			margin: 0;
+		}
+
+		#location {
+ 	        color: white;
+  			font-size: 20px;
+  			margin: 0;
+		}
+        
+        #error {
+        	font-size: 15px;
+            margin: 0;
+            color: white;
+        }
+        
+        input[type="text"] {
+  			padding: 10px;
+  			margin-right: 10px;
+  			border-radius: 5px;
+  			border: none;
+            text-align: center;
+            background-color: #FFFFFF;
+		}
+
+		button {
+  			padding: 10px 20px;
+  			border-radius: 5px;
+  			border: none;
+  			color: #FFFFFF;
+            background-color: #808080;
+  			cursor: pointer;
+            margin-top: 20px;
+		}</style><div class="weather-container"><div class="weather-box"><p id="temperature"></p><p id="humidity">Humidity: N/A</p><p id="windspeed">Wind Speed: N/A</p><p id="condition">Condition: N/A</p><p id="location"></p></div><input type="text" placeholder="Enter a location" id="search-bar"> <button id="search-btn">Search</button><p id="error"></p></div><script>function celsiusToFahrenheit(celsius) {
+  		return (celsius * 9/5) + 32;
+	}
+    
+    function mpsToKmph(mps) {
+  		return mps * 3.6;
+	}
+	
+	function mpsToMph(mps) {
+ 		return mps * 2.237;
+	}
+    
+    function getWeatherData(location) {
+  		const apiKey = "783475facc469d6d5dcebeda86e23878";
+  		const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`;
+  		return fetch(url)
+    		.then(response => response.json())
+    		.then(data => {
+      			const weatherData = {
+        			temperature: data.main.temp,
+        			humidity: data.main.humidity,
+        			windspeed: data.wind.speed,
+        			condition: data.weather[0].main,
+        			location: data.name,
+      			};
+      		return weatherData;
+    	});
+	}
+    
+	function updateUI(weatherData) {
+  		const temperature = document.querySelector("#temperature");
+        const humidity = document.querySelector("#humidity");
+        const windspeed = document.querySelector("#windspeed");
+  		const condition = document.querySelector("#condition");
+  		const location = document.querySelector("#location");
+		
+		temperature.textContent = `${weatherData.temperature}°C (${celsiusToFahrenheit(weatherData.temperature).toFixed(2)}°F)`;
+		humidity.textContent = `Humidity: ${weatherData.humidity}%`;
+        windspeed.textContent = `Wind Speed: ${weatherData.windspeed.toFixed(2)} m/s (${mpsToKmph(weatherData.windspeed).toFixed(2)} km/h, ${mpsToMph(weatherData.windspeed).toFixed(2)} mph)`;
+  		condition.textContent = `Condition: ${weatherData.condition} `;
+  		location.textContent = weatherData.location;
+	}
+    
+	const searchBtn = document.querySelector("#search-btn");
+	const searchBar = document.querySelector("#search-bar");
+
+	searchBtn.addEventListener("click", () => {
+  	  const location = searchBar.value;
+  	  getWeatherData(location)
+        .then(weatherData => {
+          const msgError = document.querySelector("#error");
+          msgError.textContent = ""
+          updateUI(weatherData);
+        })
+        .catch(error => {
+	  const msgError = document.querySelector("#error");
+          msgError.textContent = "Error: Location not found"
+          console.log(error);
+        });
+    });</script></div></div></article></main><footer class="footer"><div class="footer__copyright"><p class="align-left"><span style="color: #ffffff;">© - 2023 - skyquest -</span> <span style="color: #3598db;"><a href="https://realskyquest.github.io/privacy-policy.html" style="color: #3598db;">Privacy</a></span></p></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://realskyquest.github.io/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script defer="defer" src="https://realskyquest.github.io/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
