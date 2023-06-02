@@ -3,7 +3,7 @@
     <title>skyquest</title>
     <link href="https://realskyquest.github.io/feed.xml" rel="self" />
     <link href="https://realskyquest.github.io" />
-    <updated>2023-06-01T15:01:30+05:00</updated>
+    <updated>2023-06-02T16:11:37+05:00</updated>
     <author>
         <name>realskyquest</name>
     </author>
@@ -17,178 +17,26 @@
         <link href="https://realskyquest.github.io/weather-application.html"/>
         <id>https://realskyquest.github.io/weather-application.html</id>
 
-        <updated>2023-06-01T15:01:30+05:00</updated>
+        <updated>2023-06-02T16:11:37+05:00</updated>
             <summary>
                 <![CDATA[
-                    Weather Application: enter your location to see current data from openweathermap.org. https://github.com/realskyquest/weather-application Humidity: N/A Wind Speed: N/A Condition: N/A
+                    This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp; eg: London, GB&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 
   <p class="align-center">
-    Weather Application: enter your location to see current data from openweathermap.org.<br><br>
+    This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp;<br>eg: London, GB or Tokyo, JP<br>
   </p>
-
-  <p class="msg msg--info align-center">
-    https://github.com/realskyquest/weather-application
-  </p>
-<hr class="separator separator--long-line" />
-<div><style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
-        
-        .weather-container {
-  			display: flex;
-  			flex-direction: column;
-  			align-items: center;
-  			justify-content: center;
-  			height: 100vh;
-		}
-
-		.weather-box {
-  			display: flex;
-  			flex-direction: column;
-  			align-items: center;
-  			justify-content: center;
-  			background-color: #A52A2A;
-  			border-radius: 10px;
-  			padding: 20px;
-		}
-        
-        #temperature {
-        	font-family: Oswald, sans-serif;
-  			font-size: 50px;
- 			margin: 0;
-  		    color: white;
-		}
-        
-		#humidity {
- 	        color: white;
-        	font-size: 20px;
-            margin: 0;
-        }
-        
-        #windspeed {
-        	font-size: 20px;
-            margin: 0;
-            color: white;
-        }
-        
-		#condition {
- 	        color: white;
-  			font-size: 20px;
-  			margin: 0;
-		}
-
-		#location {
- 	        color: white;
-  			font-size: 20px;
-  			margin: 0;
-		}
-        
-        #error {
-        	font-size: 15px;
-            margin: 0;
-            color: white;
-        }
-        
-        input[type="text"] {
-  			padding: 10px;
-  			margin-right: 10px;
-  			border-radius: 5px;
-  			border: none;
-            text-align: center;
-            background-color: #FFFFFF;
-		}
-
-		button {
-  			padding: 10px 20px;
-  			border-radius: 5px;
-  			border: none;
-  			color: #FFFFFF;
-            background-color: #808080;
-  			cursor: pointer;
-            margin-top: 20px;
-		}
-</style>
-
-<div class="weather-container">
-        <div class="weather-box">
-      	    <p id="temperature"></p>
-            <p id="humidity">Humidity: N/A</p>
-            <p id="windspeed">Wind Speed: N/A</p>
-      		<p id="condition">Condition: N/A</p>
-      		<p id="location"></p>
-    	</div>
-    	<input type="text" placeholder="Enter a location" id="search-bar">
-    	<button id="search-btn">Search</button>
-        <p id="error"></p>
+<div><a href="https://github.com/realskyquest/weather-application">Visit the github for the source code</a>
+</div>
+<div><div class="post__iframe"><iframe loading="lazy" src="https://realskyquest.github.io/weather-application/" width="600" height="400"></iframe></div>
 </div>
 
-<script>
-    function celsiusToFahrenheit(celsius) {
-  		return (celsius * 9/5) + 32;
-	}
+  <p>
     
-    function mpsToKmph(mps) {
-  		return mps * 3.6;
-	}
-	
-	function mpsToMph(mps) {
- 		return mps * 2.237;
-	}
-    
-    function getWeatherData(location) {
-  		const apiKey = "783475facc469d6d5dcebeda86e23878";
-  		const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`;
-  		return fetch(url)
-    		.then(response => response.json())
-    		.then(data => {
-      			const weatherData = {
-        			temperature: data.main.temp,
-        			humidity: data.main.humidity,
-        			windspeed: data.wind.speed,
-        			condition: data.weather[0].main,
-        			location: data.name,
-      			};
-      		return weatherData;
-    	});
-	}
-    
-	function updateUI(weatherData) {
-  		const temperature = document.querySelector("#temperature");
-        const humidity = document.querySelector("#humidity");
-        const windspeed = document.querySelector("#windspeed");
-  		const condition = document.querySelector("#condition");
-  		const location = document.querySelector("#location");
-		
-		temperature.textContent = `${weatherData.temperature}°C (${celsiusToFahrenheit(weatherData.temperature).toFixed(2)}°F)`;
-		humidity.textContent = `Humidity: ${weatherData.humidity}%`;
-        windspeed.textContent = `Wind Speed: ${weatherData.windspeed.toFixed(2)} m/s (${mpsToKmph(weatherData.windspeed).toFixed(2)} km/h, ${mpsToMph(weatherData.windspeed).toFixed(2)} mph)`;
-  		condition.textContent = `Condition: ${weatherData.condition} `;
-  		location.textContent = weatherData.location;
-	}
-    
-	const searchBtn = document.querySelector("#search-btn");
-	const searchBar = document.querySelector("#search-bar");
-
-	searchBtn.addEventListener("click", () => {
-  	  const location = searchBar.value;
-  	  getWeatherData(location)
-        .then(weatherData => {
-          const msgError = document.querySelector("#error");
-          msgError.textContent = ""
-          updateUI(weatherData);
-        })
-        .catch(error => {
-	  const msgError = document.querySelector("#error");
-          msgError.textContent = "Error: Location not found"
-          console.log(error);
-        });
-    });
-</script>
-</div>
+  </p>
             ]]>
         </content>
     </entry>
