@@ -15,14 +15,14 @@
             "url": "https://realskyquest.github.io/weather-application.html",
             "title": "Weather Application",
             "summary": "This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp; eg: London, GB&hellip;",
-            "content_html": "\n  <p class=\"align-center\">\n    This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp;<br>eg: London, GB or Tokyo, JP<br>\n  </p>\n<div><div style=\"text-align: center;\">\n  <a href=\"https://github.com/realskyquest/weather-application\" style=\"color: #808080;\">Visit the GitHub for the source code</a>\n</div>\n</div>\n<div><div class=\"post__iframe\"><iframe loading=\"lazy\" src=\"https://realskyquest.github.io/weather-application/\" width=\"600\" height=\"400\"></iframe></div>\n</div>\n\n  <p>\n    \n  </p>",
+            "content_html": "\n  <p class=\"align-center\">\n    This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp;<br>eg: London, GB or Tokyo, JP<br>\n  </p>\n<div><div style=\"text-align: center;\">\n  <a href=\"https://github.com/realskyquest/weather-application\" loading=\"lazy\" style=\"color: #808080;\">Visit the GitHub for the source code</a>\n</div>\n</div>\n<div><div class=\"post__iframe\"><iframe loading=\"lazy\" src=\"https://realskyquest.github.io/weather-application/\" width=\"600\" height=\"400\"></iframe></div>\n</div>\n\n  <p>\n    \n  </p>",
             "author": {
                 "name": "realskyquest"
             },
             "tags": [
             ],
             "date_published": "2023-06-02T05:51:25+05:00",
-            "date_modified": "2023-06-02T17:00:11+05:00"
+            "date_modified": "2023-06-02T18:08:50+05:00"
         },
         {
             "id": "https://realskyquest.github.io/privacy-policy.html",
