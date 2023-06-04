@@ -11,18 +11,32 @@
     },
     "items": [
         {
+            "id": "https://realskyquest.github.io/food-recipe-finder-application.html",
+            "url": "https://realskyquest.github.io/food-recipe-finder-application.html",
+            "title": "Food Recipe Finder Application",
+            "summary": "This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories Visit the GitHub for the source code",
+            "content_html": "\n  <p class=\"align-center\">\n    This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories\n  </p>\n<div><div style=\"text-align: center;\">\n  <a href=\"https://github.com/realskyquest/food-recipe-finder\" style=\"color: #808080;\">Visit the GitHub for the source code</a>\n</div></div>\n<div><div class=\"post__iframe\"><iframe src=\"https://realskyquest.github.io/food-recipe-finder/index.html\" width=\"600\" height=\"400\" loading=\"lazy\" title=\"Embedded Food Recipe Finder Application\"></iframe></div></div>",
+            "author": {
+                "name": "realskyquest"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-06-04T15:58:01+05:00",
+            "date_modified": "2023-06-04T16:03:02+05:00"
+        },
+        {
             "id": "https://realskyquest.github.io/weather-application.html",
             "url": "https://realskyquest.github.io/weather-application.html",
             "title": "Weather Application",
             "summary": "This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp; eg: London, GB&hellip;",
-            "content_html": "\n  <p class=\"align-center\">\n    This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp;<br>eg: London, GB or Tokyo, JP<br>\n  </p>\n<div><div style=\"text-align: center;\">\n  <a href=\"https://github.com/realskyquest/weather-application\" loading=\"lazy\" style=\"color: #808080;\" title=\"Embedded Weather Application\">Visit the GitHub for the source code</a>\n</div>\n</div>\n<div><div class=\"post__iframe\"><iframe loading=\"lazy\" src=\"https://realskyquest.github.io/weather-application/\" width=\"600\" height=\"400\"></iframe></div>\n</div>\n\n  <p>\n    \n  </p>",
+            "content_html": "\n  <p class=\"align-center\">\n    This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp;<br>eg: London, GB or Tokyo, JP<br>\n  </p>\n<div><div style=\"text-align: center;\">\n  <a href=\"https://github.com/realskyquest/weather-application\" style=\"color: #808080;\">Visit the GitHub for the source code</a>\n</div>\n</div>\n<div><div class=\"post__iframe\"><iframe src=\"https://realskyquest.github.io/weather-application/index.html\" width=\"600\" height=\"400\" loading=\"lazy\" title=\"Embedded Weather Application\"></iframe></div>\n</div>\n\n  <p>\n    \n  </p>",
             "author": {
                 "name": "realskyquest"
             },
             "tags": [
             ],
             "date_published": "2023-06-02T05:51:25+05:00",
-            "date_modified": "2023-06-02T20:35:03+05:00"
+            "date_modified": "2023-06-04T16:02:34+05:00"
         },
         {
             "id": "https://realskyquest.github.io/privacy-policy.html",

@@ -3,12 +3,39 @@
     <title>skyquest</title>
     <link href="https://realskyquest.github.io/feed.xml" rel="self" />
     <link href="https://realskyquest.github.io" />
-    <updated>2023-06-02T20:35:03+05:00</updated>
+    <updated>2023-06-04T16:03:02+05:00</updated>
     <author>
         <name>realskyquest</name>
     </author>
     <id>https://realskyquest.github.io</id>
 
+    <entry>
+        <title>Food Recipe Finder Application</title>
+        <author>
+            <name>realskyquest</name>
+        </author>
+        <link href="https://realskyquest.github.io/food-recipe-finder-application.html"/>
+        <id>https://realskyquest.github.io/food-recipe-finder-application.html</id>
+
+        <updated>2023-06-04T16:03:02+05:00</updated>
+            <summary>
+                <![CDATA[
+                    This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories Visit the GitHub for the source code
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p class="align-center">
+    This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories
+  </p>
+<div><div style="text-align: center;">
+  <a href="https://github.com/realskyquest/food-recipe-finder" style="color: #808080;">Visit the GitHub for the source code</a>
+</div></div>
+<div><div class="post__iframe"><iframe src="https://realskyquest.github.io/food-recipe-finder/index.html" width="600" height="400" loading="lazy" title="Embedded Food Recipe Finder Application"></iframe></div></div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Weather Application</title>
         <author>
@@ -17,7 +44,7 @@
         <link href="https://realskyquest.github.io/weather-application.html"/>
         <id>https://realskyquest.github.io/weather-application.html</id>
 
-        <updated>2023-06-02T20:35:03+05:00</updated>
+        <updated>2023-06-04T16:02:34+05:00</updated>
             <summary>
                 <![CDATA[
                     This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp; eg: London, GB&hellip;
@@ -30,10 +57,10 @@
     This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp;<br>eg: London, GB or Tokyo, JP<br>
   </p>
 <div><div style="text-align: center;">
-  <a href="https://github.com/realskyquest/weather-application" loading="lazy" style="color: #808080;" title="Embedded Weather Application">Visit the GitHub for the source code</a>
+  <a href="https://github.com/realskyquest/weather-application" style="color: #808080;">Visit the GitHub for the source code</a>
 </div>
 </div>
-<div><div class="post__iframe"><iframe loading="lazy" src="https://realskyquest.github.io/weather-application/" width="600" height="400"></iframe></div>
+<div><div class="post__iframe"><iframe src="https://realskyquest.github.io/weather-application/index.html" width="600" height="400" loading="lazy" title="Embedded Weather Application"></iframe></div>
 </div>
 
   <p>
