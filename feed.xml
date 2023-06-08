@@ -3,7 +3,7 @@
     <title>skyquest</title>
     <link href="https://realskyquest.github.io/feed.xml" rel="self" />
     <link href="https://realskyquest.github.io" />
-    <updated>2023-06-08T16:21:15+05:00</updated>
+    <updated>2023-06-08T16:25:07+05:00</updated>
     <author>
         <name>realskyquest</name>
     </author>
@@ -17,17 +17,17 @@
         <link href="https://realskyquest.github.io/food-recipe-finder-application.html"/>
         <id>https://realskyquest.github.io/food-recipe-finder-application.html</id>
 
-        <updated>2023-06-08T16:21:15+05:00</updated>
+        <updated>2023-06-08T16:25:07+05:00</updated>
             <summary>
                 <![CDATA[
-                    This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories Visit the Github page Test the application
+                    This is a Food Reciper Finder Application made using html5, javascript and css. This uses spoonacular.com api to get a list of recipes and display it along with the calories Visit the Github page Test the application
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 
   <p class="align-center">
-    This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories
+    This is a Food Reciper Finder Application made using html5, javascript and css. This uses spoonacular.com api to get a list of recipes and display it along with the calories
   </p>
 <div><div style="text-align: center;">
   <a href="https://github.com/realskyquest/food-recipe-finder" style="color: #3598db;">Visit the Github page</a>
