@@ -3,7 +3,7 @@
     <title>skyquest</title>
     <link href="https://realskyquest.github.io/feed.xml" rel="self" />
     <link href="https://realskyquest.github.io" />
-    <updated>2023-06-04T16:03:02+05:00</updated>
+    <updated>2023-06-08T16:21:15+05:00</updated>
     <author>
         <name>realskyquest</name>
     </author>
@@ -17,10 +17,10 @@
         <link href="https://realskyquest.github.io/food-recipe-finder-application.html"/>
         <id>https://realskyquest.github.io/food-recipe-finder-application.html</id>
 
-        <updated>2023-06-04T16:03:02+05:00</updated>
+        <updated>2023-06-08T16:21:15+05:00</updated>
             <summary>
                 <![CDATA[
-                    This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories Visit the GitHub for the source code
+                    This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories Visit the Github page Test the application
                 ]]>
             </summary>
         <content type="html">
@@ -30,9 +30,18 @@
     This is a Food Reciper Finder Application made using html5, javascript and css. This uses edamam.com api to get a list of recipes and display it along with the calories
   </p>
 <div><div style="text-align: center;">
-  <a href="https://github.com/realskyquest/food-recipe-finder" style="color: #808080;">Visit the GitHub for the source code</a>
-</div></div>
-<div><div class="post__iframe"><iframe src="https://realskyquest.github.io/food-recipe-finder/index.html" width="600" height="400" loading="lazy" title="Embedded Food Recipe Finder Application"></iframe></div></div>
+  <a href="https://github.com/realskyquest/food-recipe-finder" style="color: #3598db;">Visit the Github page</a>
+</div>
+
+<div style="text-align: center;">
+  <a href="https://realskyquest.github.io/food-recipe-finder/index.html" style="color: #3598db;">Test the application</a>
+</div>
+</div>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://realskyquest.github.io/media/posts/10/244363531-77747f56-3107-4ad1-b85d-1be7d5590049.png" height="649" width="1352" alt=""  sizes="100vw" srcset="https://realskyquest.github.io/media/posts/10/responsive/244363531-77747f56-3107-4ad1-b85d-1be7d5590049-xs.webp 300w ,https://realskyquest.github.io/media/posts/10/responsive/244363531-77747f56-3107-4ad1-b85d-1be7d5590049-sm.webp 480w ,https://realskyquest.github.io/media/posts/10/responsive/244363531-77747f56-3107-4ad1-b85d-1be7d5590049-md.webp 768w ,https://realskyquest.github.io/media/posts/10/responsive/244363531-77747f56-3107-4ad1-b85d-1be7d5590049-lg.webp 1024w ,https://realskyquest.github.io/media/posts/10/responsive/244363531-77747f56-3107-4ad1-b85d-1be7d5590049-xl.webp 1360w ,https://realskyquest.github.io/media/posts/10/responsive/244363531-77747f56-3107-4ad1-b85d-1be7d5590049-2xl.webp 1600w">
+      
+    </figure>
             ]]>
         </content>
     </entry>
@@ -44,7 +53,7 @@
         <link href="https://realskyquest.github.io/weather-application.html"/>
         <id>https://realskyquest.github.io/weather-application.html</id>
 
-        <updated>2023-06-04T16:02:34+05:00</updated>
+        <updated>2023-06-08T16:19:46+05:00</updated>
             <summary>
                 <![CDATA[
                     This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp; eg: London, GB&hellip;
@@ -57,15 +66,18 @@
     This is a Weather Application made using html5, javascript and css. This uses openweathermap.org and openstreetmap.org api to get the current information, location and display it. To use this you will have to input the name of a city and its code(optional)&nbsp;<br>eg: London, GB or Tokyo, JP<br>
   </p>
 <div><div style="text-align: center;">
-  <a href="https://github.com/realskyquest/weather-application" style="color: #808080;">Visit the GitHub for the source code</a>
-</div>
-</div>
-<div><div class="post__iframe"><iframe src="https://realskyquest.github.io/weather-application/index.html" width="600" height="400" loading="lazy" title="Embedded Weather Application"></iframe></div>
+  <a href="https://github.com/realskyquest/weather-application" style="color: #3598db;">Visit the Github page</a>
 </div>
 
-  <p>
-    
-  </p>
+<div style="text-align: center;">
+  <a href="https://github.com/realskyquest/weather-application/index.html" style="color: #3598db;">Test the application</a>
+</div>
+</div>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://realskyquest.github.io/media/posts/9/243540978-64a3d2be-fe93-4184-b88d-a59410784bcc.png" height="656" width="1366" alt=""  sizes="100vw" srcset="https://realskyquest.github.io/media/posts/9/responsive/243540978-64a3d2be-fe93-4184-b88d-a59410784bcc-xs.webp 300w ,https://realskyquest.github.io/media/posts/9/responsive/243540978-64a3d2be-fe93-4184-b88d-a59410784bcc-sm.webp 480w ,https://realskyquest.github.io/media/posts/9/responsive/243540978-64a3d2be-fe93-4184-b88d-a59410784bcc-md.webp 768w ,https://realskyquest.github.io/media/posts/9/responsive/243540978-64a3d2be-fe93-4184-b88d-a59410784bcc-lg.webp 1024w ,https://realskyquest.github.io/media/posts/9/responsive/243540978-64a3d2be-fe93-4184-b88d-a59410784bcc-xl.webp 1360w ,https://realskyquest.github.io/media/posts/9/responsive/243540978-64a3d2be-fe93-4184-b88d-a59410784bcc-2xl.webp 1600w">
+      
+    </figure>
             ]]>
         </content>
     </entry>
@@ -77,7 +89,7 @@
         <link href="https://realskyquest.github.io/privacy-policy.html"/>
         <id>https://realskyquest.github.io/privacy-policy.html</id>
 
-        <updated>2023-05-31T18:14:49+05:00</updated>
+        <updated>2023-06-06T17:54:39+05:00</updated>
             <summary>
                 <![CDATA[
                     Privacy Policy Last updated: May 31, 2023 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your&hellip;
@@ -251,7 +263,7 @@
 <h1>Contact Us</h1>
 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
 <ul>
-<li>By email: </li>
+<li>By email: websiteSkyQuest@hotmail.com</li>
 </ul></div>
             ]]>
         </content>
@@ -264,10 +276,10 @@
         <link href="https://realskyquest.github.io/home.html"/>
         <id>https://realskyquest.github.io/home.html</id>
 
-        <updated>2023-05-31T21:53:31+05:00</updated>
+        <updated>2023-06-06T17:58:19+05:00</updated>
             <summary>
                 <![CDATA[
-                    Welcome This website is on testing phase test test test test test test test test test
+                    Welcome This website is under-construction Current options: 1. Check the projects
                 ]]>
             </summary>
         <content type="html">
@@ -279,11 +291,7 @@
 <hr class="separator separator--long-line" />
 
   <p class="align-center">
-    This website is on testing phase<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test
-  </p>
-
-  <p>
-    
+    This website is under-construction<br>Current options:<br>1. Check the projects<br>
   </p>
             ]]>
         </content>
