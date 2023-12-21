@@ -1,47 +1,155 @@
 # Svelte + TS + Vite
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+This my template for a web app that uses svelte library.
 
-## Recommended IDE Setup
+`by realskyquest`
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+```bash
+pnpm create vite@latest my-app
+cd my-app
+pnpm install
+```
 
-## Need an official Svelte framework?
+Add eslint
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+```bat
+pnpm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-svelte
+```
 
-## Technical considerations
+Add prettier and tailwind + daisyui
 
-**Why use this over SvelteKit?**
+```bat
+pnpm i -D prettier prettier-plugin-svelte prettier-plugin-tailwindcss daisyui autoprefixer postcss tailwindcss @tailwindcss/typography
+```
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+Add eslint config files along with prettier
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+`.eslintrc.cjs`
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+```js
+/** @type { import("eslint").Linter.FlatConfig } */
+module.exports = {
+	root: true,
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:svelte/recommended',
+		'prettier'
+	],
+	parser: '@typescript-eslint/parser',
+	plugins: ['@typescript-eslint'],
+	parserOptions: {
+		sourceType: 'module',
+		ecmaVersion: 2020,
+		extraFileExtensions: ['.svelte']
+	},
+	env: {
+		browser: true,
+		es2017: true,
+		node: true
+	},
+	overrides: [
+		{
+			files: ['*.svelte'],
+			parser: 'svelte-eslint-parser',
+			parserOptions: {
+				parser: '@typescript-eslint/parser'
+			}
+		}
+	]
+};
+```
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+`.prettierrc`
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+```json
+{
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"printWidth": 100,
+	"plugins": ["prettier-plugin-svelte"],
+	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+}
+```
 
-**Why include `.vscode/extensions.json`?**
+`.prettierignore` + `.eslintignore`
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+```
+.DS_Store
+node_modules
+/dist
+/package
+.env
+.env.*
+!.env.example
 
-**Why enable `allowJs` in the TS template?**
+# Ignore files for PNPM, NPM and YARN
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+```
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+Finally update the `package.json`
 
-**Why is HMR not preserving my local component state?**
+```json
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check src/**/*.{ts,svelte} && eslint src/**/*.{ts,svelte}",
+    "format": "prettier --write src/**/*.{ts,svelte}"
+}
+```
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+Update the project files
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+`main.ts`
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```js
+import './app.css';
+import App from './App.svelte';
+
+const app = new App({
+	target: document.getElementById('app') as HTMLElement
+});
+
+export default app;
+```
+
+`app.css`
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+`App.svelte`
+
+```html
+<script lang="ts">
+	import svelteLogo from './assets/svelte.svg';
+	import viteLogo from '/vite.svg';
+	let msg = 'Lorem ipsum';
+</script>
+
+<main>
+	<div class="hero min-h-screen bg-base-200">
+		<div class="hero-content flex-col lg:flex-row">
+			<img src="{viteLogo}" alt="Vite Logo" class="max-w-sm rounded-lg shadow-2xl" />
+			<img src="{svelteLogo}" alt="Svelte Logo" class="max-w-sm rounded-lg shadow-2xl" />
+			<div>
+				<div class="card m-5 mx-auto w-96 bg-base-100 shadow-xl">
+					<div class="card-body">
+						<h2 class="card-title">Hello world!</h2>
+						<p>{msg}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
 ```
