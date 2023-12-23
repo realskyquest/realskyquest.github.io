@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://realskyquest.github.io/sitemap.xml
