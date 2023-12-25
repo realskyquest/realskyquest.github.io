@@ -1,22 +1,42 @@
 <script lang="ts">
-	import svelteLogo from './assets/svelte.svg';
-	import viteLogo from '/vite.svg';
 	let msg = 'Lorem ipsum';
+
+	import Navbar from './Navbar.svelte';
+	import Footer from './Footer.svelte';
+	import Example from './components/Example.svelte';
+
+	import Picture from './lib/Picture.svelte';
+
+	import bannerAvif from './assets/banner.jpg?format=avif&as=srcset';
+	import bannerWebp from './assets/banner.jpg?format=webp&as=srcset';
+	import banner from './assets/banner.jpg?as=metadata';
 </script>
 
 <main>
-	<div class="hero min-h-screen bg-base-200">
-		<div class="hero-content flex-col lg:flex-row">
-			<img src={viteLogo} alt="Vite Logo" class="max-w-sm rounded-lg shadow-2xl" />
-			<img src={svelteLogo} alt="Svelte Logo" class="max-w-sm rounded-lg shadow-2xl" />
-			<div>
-				<div class="card m-5 mx-auto w-96 bg-base-100 shadow-xl">
-					<div class="card-body">
-						<h2 class="card-title">Hello world!</h2>
-						<p>{msg}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<Navbar />
+
+	<section class="mt-40 mb-20">
+		<article class="prose mx-auto">
+			<Picture
+				alt="banner"
+				loading="eager"
+				fetchpriority="high"
+				image={banner}
+				srcsetAvif={bannerAvif}
+				srcsetWebp={bannerWebp}
+				css="shadow-2xl rounded-lg"
+				size="500;500"
+			/>
+
+			<h1 class="text-center">
+				{msg}
+			</h1>
+		</article>
+	</section>
+
+	<section class="m-5">
+		<Example></Example>
+	</section>
+
+	<Footer />
 </main>
