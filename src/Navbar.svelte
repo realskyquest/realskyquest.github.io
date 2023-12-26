@@ -1,8 +1,6 @@
 <script lang="ts">
+	import { base } from './lib/Base';
 	import { themeHandler } from './lib/themeHandler';
-	$: console.log($themeHandler);
-
-	const base: string = import.meta.env.BASE_URL;
 
 	let currentTheme = false;
 
@@ -43,16 +41,14 @@
 					tabindex="0"
 					class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 				>
-					<li><a href={base}>Home</a></li>
-					<li><a href={base}>Example</a></li>
+					<li><a href={$base}>Home</a></li>
 				</ul>
 			</div>
 			<div class="btn btn-ghost text-xl">realSkyQuest</div>
 		</div>
 		<div class="navbar-center hidden lg:flex">
 			<ul class="menu menu-horizontal px-1">
-				<li><a href={base}>Home</a></li>
-				<li><a href={base}>Example</a></li>
+				<li><a href={$base}>Home</a></li>
 			</ul>
 		</div>
 		<div class="navbar-end">

@@ -15,18 +15,7 @@ export default defineConfig(({ command }) => {
 	} else {
 		return {
 			plugins: [imagetools(), svelte(), purgeCss()],
-			base: 'https://cdn.jsdelivr.net/gh/realskyquest/realskyquest.github.io@gh-pages/',
-			build: {
-				rollupOptions: {
-					output: {
-						assetFileNames: (assetInfo) => {
-							if (assetInfo.name == 'index.css') return 'assets/index.min.css';
-							return 'assets/[name][extname]';
-						},
-						entryFileNames: 'assets/[name].min.js'
-					}
-				}
-			}
+			base: 'https://cdn.jsdelivr.net/npm/@skyquest/realskyquest-github-io@0.0.2/'
 		};
 	}
 });

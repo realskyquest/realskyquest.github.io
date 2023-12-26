@@ -42,7 +42,7 @@
 			class={css}
 		/>
 	</picture>
-{:else}
+{:else if width && height}
 	<picture>
 		<source srcset={srcsetAvif} type="image/avif" />
 		<source srcset={srcsetWebp} type="image/webp" />
