@@ -63,7 +63,7 @@
 				<article class="prose mx-auto">
 					<h2 class="text-center">Contact me</h2>
 					<div class="divider"></div>
-					<div class="flex gap-x-10">
+					<div class="sm:flex gap-x-10">
 						<a href="mailto:connectskyquest@outlook.com" title="Email">
 							<Mail size="150" />
 						</a>

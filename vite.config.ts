@@ -15,7 +15,7 @@ export default defineConfig(({ command }) => {
 	} else {
 		return {
 			plugins: [imagetools(), svelte(), purgeCss()],
-			base: 'https://cdn.jsdelivr.net/npm/@skyquest/realskyquest-github-io@0.0.3/'
+			base: 'https://cdn.jsdelivr.net/npm/@skyquest/realskyquest-github-io@0.0.4/'
 		};
 	}
 });

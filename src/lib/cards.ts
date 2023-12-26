@@ -37,9 +37,7 @@ export const cardsList = [
 			[
 				'Vscode',
 				'Started using it 2 years ago, I am not that experienced using advanced features of the IDE.'
-			],
-			['Github pages', 'Used for hosting static websites.'],
-			['Cloudflare pages', 'Used for hosting ssr/dynamic websites.']
+			]
 		]
 	}
 ];
