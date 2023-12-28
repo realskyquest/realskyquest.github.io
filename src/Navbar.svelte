@@ -2,10 +2,12 @@
 	import { base } from './lib/Base';
 	import { themeHandler } from './lib/themeHandler';
 
-	let currentTheme = false;
+	let currentTheme: boolean = false;
 
-	if ($themeHandler === 'dark') {
+	$: if ($themeHandler === 'dark') {
 		currentTheme = true;
+	} else if ($themeHandler === 'light') {
+		currentTheme = false;
 	}
 
 	function handleThemeChange() {
