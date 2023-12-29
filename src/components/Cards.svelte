@@ -1,6 +1,11 @@
 <script lang="ts">
-	export let cards: any;
-	export let icons: any;
+	export let cards: cardsType;
+	export let icons: Array<any>;
+
+	interface cardsType {
+		title: string;
+		list: Array<Array<string>>;
+	}
 </script>
 
 <section class="m-5">

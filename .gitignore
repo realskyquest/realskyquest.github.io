@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# google console
+public/googlec0f48fa35b41d93f.html
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
