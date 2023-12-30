@@ -18,8 +18,17 @@
 
 	import Picture from './components/Picture.svelte';
 
-	import bannerAvif from './assets/banner.jpg?format=avif&as=srcset';
-	import bannerWebp from './assets/banner.jpg?format=webp&as=srcset';
+	import bannerAvif from './assets/banner.jpg?format=avif&as=metadata';
+	import bannerAvifM from './assets/banner-m.jpg?format=avif&as=metadata';
+	import bannerAvifS from './assets/banner-s.jpg?format=avif&as=metadata';
+
+	import bannerWebp from './assets/banner.jpg?format=webp&as=metadata';
+	import bannerWebpM from './assets/banner-m.jpg?format=webp&as=metadata';
+	import bannerWebpS from './assets/banner-s.jpg?format=webp&as=metadata';
+
+	const bannerAvifSrcset: string = `${bannerAvif.src} ${bannerAvif.width}w, ${bannerAvifM.src} ${bannerAvifM.width}w, ${bannerAvifS.src} ${bannerAvifS.width}w`;
+	const bannerWebpSrcset: string = `${bannerWebp.src} ${bannerWebp.width}w, ${bannerWebpM.src} ${bannerWebpM.width}w, ${bannerWebpS.src} ${bannerWebpS.width}w`;
+
 	import banner from './assets/banner.jpg?as=metadata';
 </script>
 
@@ -34,8 +43,8 @@
 				loading="eager"
 				fetchpriority="high"
 				image={banner}
-				srcsetAvif={bannerAvif}
-				srcsetWebp={bannerWebp}
+				srcsetAvif={bannerAvifSrcset}
+				srcsetWebp={bannerWebpSrcset}
 				css="rounded-t-xl"
 				size="auto"
 			/>

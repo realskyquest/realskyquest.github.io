@@ -21,7 +21,7 @@ export default defineConfig(({ command }) => {
 	} else {
 		return {
 			plugins: [imagetools(), svelte(), purgeCss(), splitVendorChunkPlugin()],
-			base: 'https://cdn.jsdelivr.net/npm/@skyquest/realskyquest-github-io@0.0.6/',
+			base: 'https://cdn.jsdelivr.net/npm/@skyquest/realskyquest-github-io@0.0.7/',
 			build: {
 				rollupOptions: {
 					output: {
